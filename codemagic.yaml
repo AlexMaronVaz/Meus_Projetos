@@ -1,0 +1,11 @@
+workflows:
+  android:
+    name: Android Workflow
+    environment:
+      groups:
+        - android
+    scripts:
+      - pip install buildozer
+      - buildozer android debug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
