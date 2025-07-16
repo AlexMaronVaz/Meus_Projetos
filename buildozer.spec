@@ -58,5 +58,9 @@ android.private_storage = True
 # (str) Android architecture to use (armeabi-v7l, arm64-v8a, x86)
 android.arch = armeabi-v7l
 
+source.dir = .
+
+version = 1.0
+
 # (str) Main entry point of the application
 main.py = Estudos.py
