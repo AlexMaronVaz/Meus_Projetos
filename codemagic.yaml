@@ -1,12 +1,8 @@
 workflows:
   android:
     name: Android Workflow
-    environment:
-      groups:
-        - android
-      env:
-        PYTHON_VERSION: 3.9
     scripts:
-      - pyenv global $PYTHON_VERSION
       - pip install buildozer
       - buildozer android debug
+    artifacts:
+      - bin/*.apk
