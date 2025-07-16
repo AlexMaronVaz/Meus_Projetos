@@ -4,8 +4,7 @@ workflows:
     environment:
       groups:
         - android
+      python_version: 3.9
     scripts:
       - pip install buildozer
       - buildozer android debug
-    artifacts:
-      - app/build/outputs/apk/debug/*.apk
